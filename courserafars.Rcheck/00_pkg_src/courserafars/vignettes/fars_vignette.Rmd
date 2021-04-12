@@ -1,0 +1,64 @@
+---
+title: "fars_vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{fars_vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(courserafars)
+```
+
+
+--- Welcome to the 'fars' package!
+
+`fars_summarize_years` function summarizes the number of accidents by month and year
+The function `fars_map_state` plots the accidents location by state and year.
+The other functions:
+* fars_read
+* make_filename
+* fars_read_years
+are auxiliary functions to the main functions. For more information about them, please check the help files.
+
+
+*Let's start!*
+
+Here are the packages that you will need to install in advance:
+```{r, echo=TRUE, include=TRUE}
+library(dplyr)
+library(maps)
+library(readr)
+library(tidyr)
+```
+
+## Load the data do your current working directory
+
+To use `fars_map_state`, you need data from the US National Highway Traffic Safety Administration's Fatality Analysis Reporting System, which is a nationwide census providing the American public yearly data regarding fatal injuries suffered in motor vehicle traffic crashes. You can download the data [here](https://www.coursera.org/learn/r-packages/peer/25XGp/documenting-code).
+
+Not sure what is your current working directory?
+
+* Type `getwd()` on the console to find out!
+
+## Use fars_summarize_years!
+
+Say you want to know the number of accidents per year and month, then `fars_summarize_year` is your function!
+
+## Use fars_map_state!
+
+Say you want to know the the location of the accidents that occurred in 2013 in the state of California.
+Then, the function will take as input, 6 (California state number) and 2013 (the year).
+
+And that's a wrap!
+For more details, please check the help files!
+
+
+

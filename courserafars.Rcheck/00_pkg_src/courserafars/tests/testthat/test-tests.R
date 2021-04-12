@@ -1,0 +1,3 @@
+# Test make_filename
+test_that("Check_make_filename", {
+  expect_identical(make_filename(2013), "accident_2013.csv.bz2")})

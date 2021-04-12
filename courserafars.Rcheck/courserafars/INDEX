@@ -1,0 +1,5 @@
+fars_map_state          Plot accidents' location by state and year
+fars_read               Read FARS filename into a tibble
+fars_read_years         List of month/year by FARS filename
+fars_summarize_years    Count observation grouped by month and year
+make_filename           Create standard FARS filename
